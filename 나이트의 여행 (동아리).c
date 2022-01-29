@@ -21,8 +21,8 @@ int main (void)
 		reset(board);
 		draw_board(board);
 		
-		printf("Ä«¿îÆ® %d\n", count);
-		printf("½ÃÀÛ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä.(x y)(0~7) : ");
+		printf("ì¹´ìš´íŠ¸ %d\n", count);
+		printf("ì‹œì‘ ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì„¸ìš”.(x y)(0~7) : ");
 		scanf("%d %d", &y1, &x1);
 	
 		board[x1][y1]='O';
@@ -36,8 +36,8 @@ int main (void)
 			while (count%2==1)
 			{
 				draw_board(board);
-				printf("Ä«¿îÆ® %d\n", count);
-				printf("ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä. : ");
+				printf("ì¹´ìš´íŠ¸ %d\n", count);
+				printf("ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì„¸ìš”. : ");
 				scanf("%d %d", &y2, &x2);
 				
 				if (board[x2][y2]==' ')
@@ -49,18 +49,18 @@ int main (void)
 					}
 					else 
 					{
-						printf("\nÀß¸øµÈ À§Ä¡ÀÔ´Ï´Ù! 1 ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä.\n");
+						printf("\nì˜ëª»ëœ ìœ„ì¹˜ì…ë‹ˆë‹¤! 1 ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”.\n");
 					}
 				
 				} 
 				else 
 				{
-					printf("\nÀß¸øµÈ À§Ä¡ÀÔ´Ï´Ù! ´Ù½Ã2 ÀÔ·ÂÇÏ¼¼¿ä.\n");
+					printf("\nì˜ëª»ëœ ìœ„ì¹˜ì…ë‹ˆë‹¤! ë‹¤ì‹œ2 ì…ë ¥í•˜ì„¸ìš”.\n");
 				}
 				
 				if(count==64)
 			{
-				printf("\nÀÌ°å½À´Ï´Ù!");  
+				printf("\nì´ê²¼ìŠµë‹ˆë‹¤!\");  
 				break;
 			}
 			else
@@ -74,8 +74,8 @@ int main (void)
 			while (count%2==0)
 			{
 				draw_board(board);
-				printf("Ä«¿îÆ® %d\n", count);
-				printf("ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä. : ");
+				printf("ì¹´ìš´íŠ¸ %d\n", count);
+				printf("ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì„¸ìš”. : ");
 				scanf("%d %d", &y1, &x1);
 				
 				if (board[x1][y1]==' ')
@@ -87,13 +87,13 @@ int main (void)
 					}
 					else 
 					{
-						printf("\nÀß¸øµÈ À§Ä¡ÀÔ´Ï´Ù! 3 ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä.\n");
+						printf("\nì˜ëª»ëœ ìœ„ì¹˜ì…ë‹ˆë‹¤! 3 ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”.\n");
 					}
 				
 				} 
 				else 
 				{
-					printf("\nÀß¸øµÈ À§Ä¡ÀÔ´Ï´Ù! 4 ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä.\n");
+					printf("\nì˜ëª»ëœ ìœ„ì¹˜ì…ë‹ˆë‹¤! 4 ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”.\n");
 				}
 			}
 		
